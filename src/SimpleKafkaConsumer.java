@@ -27,9 +27,7 @@ public class SimpleKafkaConsumer {
     public static void main(String[] args){
 
         Properties props = new Properties();
-        /*
 
-         */
         props.put("bootstrap.servers", "192.168.20.43:9092");
         props.put("session.timeout.ms", "10000"); // session 설정
         props.put("group.id", "test-consumer-group"); // 그룹아이디 설정
