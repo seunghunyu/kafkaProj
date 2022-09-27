@@ -41,7 +41,7 @@ public class SimpleKafkaConsumer {
 
         try {
             while (true) {
-                ConsumerRecords<String, String> records = consumer.poll(5000);
+                ConsumerRecords<String, String> records = consumer.poll(10000);
                 for (ConsumerRecord<String, String> record : records)
                     System.out.println(record.value());
             }
